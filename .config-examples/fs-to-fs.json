@@ -1,0 +1,19 @@
+{
+  "cron": "* 1 * * *",
+  "targets": [
+    {
+      "from": {
+        "driver": "file-system",
+        "options": {
+          "rootDir": "/Users/jacopomartinelli/Documents/ftech/object-storage-backup/.config-examples/tmp/backup-30-7-2021--12:37:53"
+        }
+      },
+      "to": {
+        "driver": "file-system",
+        "options": {
+          "rootDir": "/Users/jacopomartinelli/Documents/ftech/object-storage-backup/.config-examples/tmp"
+        }
+      }
+    }
+  ]
+}

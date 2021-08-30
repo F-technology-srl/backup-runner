@@ -1,0 +1,41 @@
+{
+  "cron": "* 1 * * *",
+  "targets": [
+    {
+      "from": {
+        "driver": "object-storage",
+        "options": {
+          "secretAccesKey": "",
+          "accesKeyId": "",
+          "bucketName": "test-way-bucket-for-e2e-delete-me",
+          "region": "fra1",
+          "endpoint": "fra1.digitaloceanspaces.com"
+        }
+      },
+      "to": {
+        "driver": "file-system",
+        "options": {
+          "rootDir": "/Users/jacopomartinelli/Documents/ftech/object-storage-backup/.config-examples/tmp"
+        }
+      }
+    },
+    {
+      "from": {
+        "driver": "file-system",
+        "options": {
+          "rootDir": "/Users/jacopomartinelli/Documents/ftech/object-storage-backup/node_modules"
+        }
+      },
+      "to": {
+        "driver": "object-storage",
+        "options": {
+          "secretAccesKey": "",
+          "accesKeyId": "",
+          "bucketName": "backup-test-bucket",
+          "region": "fra1",
+          "endpoint": "fra1.digitaloceanspaces.com"
+        }
+      }
+    }
+  ]
+}

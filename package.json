@@ -1,0 +1,28 @@
+{
+  "name": "backup-runner",
+  "version": "0.0.1",
+  "description": "Utility to backup object storage with s3 like api",
+  "main": "index.js",
+  "bin": {
+    "backup-runner": "index.js"
+  },
+  "scripts": {
+    "test": "jest"
+  },
+  "author": "Jacopo Martinelli <jacopo.martinelli@f.technology>",
+  "license": "ISC",
+  "type": "module",
+  "dependencies": {
+    "aws-sdk": "^2.977.0",
+    "chalk": "^4.1.2",
+    "commander": "^8.1.0",
+    "inquirer": "^8.1.2",
+    "joi": "^17.4.2",
+    "mime-types": "^2.1.32",
+    "ora": "^6.0.0"
+  },
+  "engines": {
+    "node": ">= 14.16.1",
+    "npm": ">= 7.12.0"
+  }
+}
